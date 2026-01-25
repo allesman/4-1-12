@@ -1,12 +1,62 @@
 [gd_scene load_steps=3 format=3 uid="uid://c3afyqx364kg8"]
 
 [ext_resource type="Texture2D" uid="uid://bwhl8ymbhkvxy" path="res://icon.svg" id="1_nxogm"]
-[ext_resource type="Script" uid="uid://8h8m2x586b48" path="res://Node.cs" id="2_3253y"]
+[ext_resource type="Script" uid="uid://kratpiyjoyau" path="res://GraphNode.cs" id="2_nxogm"]
 
 [node name="Root" type="Node2D"]
+scale = Vector2(0.485, 0.485)
 
 [node name="Node" type="Sprite2D" parent="."]
-position = Vector2(741, 375)
+position = Vector2(1624.8247, 814.33826)
 texture = ExtResource("1_nxogm")
-offset = Vector2(-178, -91)
-script = ExtResource("2_3253y")
+script = ExtResource("2_nxogm")
+
+[node name="Node2" type="Sprite2D" parent="."]
+position = Vector2(1355.8591, 777.55664)
+texture = ExtResource("1_nxogm")
+script = ExtResource("2_nxogm")
+
+[node name="Node3" type="Sprite2D" parent="."]
+position = Vector2(1588.0431, 568.3612)
+texture = ExtResource("1_nxogm")
+script = ExtResource("2_nxogm")
+
+[node name="Node4" type="Sprite2D" parent="."]
+position = Vector2(2006.4338, 982.1544)
+texture = ExtResource("1_nxogm")
+script = ExtResource("2_nxogm")
+
+[node name="Node5" type="Sprite2D" parent="."]
+position = Vector2(1123.6753, 768.3612)
+texture = ExtResource("1_nxogm")
+script = ExtResource("2_nxogm")
+
+[node name="Node6" type="Sprite2D" parent="."]
+position = Vector2(850.1121, 745.3727)
+texture = ExtResource("1_nxogm")
+script = ExtResource("2_nxogm")
+
+[node name="Node7" type="Sprite2D" parent="."]
+position = Vector2(916.77875, 552.2693)
+texture = ExtResource("1_nxogm")
+script = ExtResource("2_nxogm")
+
+[node name="Node8" type="Sprite2D" parent="."]
+position = Vector2(424.8247, 952.26935)
+texture = ExtResource("1_nxogm")
+script = ExtResource("2_nxogm")
+
+[node name="Node9" type="Sprite2D" parent="."]
+position = Vector2(1277.3306, 69.14282)
+texture = ExtResource("1_nxogm")
+script = ExtResource("2_nxogm")
+
+[node name="Node10" type="Sprite2D" parent="."]
+position = Vector2(1277.3306, -160.74222)
+texture = ExtResource("1_nxogm")
+script = ExtResource("2_nxogm")
+
+[node name="Node11" type="Sprite2D" parent="."]
+position = Vector2(1242.8362, 1226.3037)
+texture = ExtResource("1_nxogm")
+script = ExtResource("2_nxogm")
