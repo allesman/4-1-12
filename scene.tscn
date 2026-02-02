@@ -1,62 +1,58 @@
 [gd_scene load_steps=3 format=3 uid="uid://c3afyqx364kg8"]
 
-[ext_resource type="Texture2D" uid="uid://bwhl8ymbhkvxy" path="res://icon.svg" id="1_nxogm"]
-[ext_resource type="Script" uid="uid://kratpiyjoyau" path="res://GraphNode.cs" id="2_nxogm"]
+[ext_resource type="PackedScene" uid="uid://cyb2ilrfhc0n4" path="res://GraphNode.tscn" id="1_3253y"]
+[ext_resource type="Script" uid="uid://ce1n8puc2qhyp" path="res://GraphMovement.cs" id="2_graph_movement"]
 
 [node name="Root" type="Node2D"]
-scale = Vector2(0.485, 0.485)
 
-[node name="Node" type="Sprite2D" parent="."]
-position = Vector2(1624.8247, 814.33826)
-texture = ExtResource("1_nxogm")
-script = ExtResource("2_nxogm")
+[node name="Graph" type="Node2D" parent="."]
+position = Vector2(960, 540)
+scale = Vector2(2.2, 2.2)
+script = ExtResource("2_graph_movement")
 
-[node name="Node2" type="Sprite2D" parent="."]
-position = Vector2(1355.8591, 777.55664)
-texture = ExtResource("1_nxogm")
-script = ExtResource("2_nxogm")
+[node name="Victim" parent="Graph" instance=ExtResource("1_3253y")]
+position = Vector2(413.78116, 278.12982)
+scale = Vector2(1.0000001, 1.0000001)
 
-[node name="Node3" type="Sprite2D" parent="."]
-position = Vector2(1588.0431, 568.3612)
-texture = ExtResource("1_nxogm")
-script = ExtResource("2_nxogm")
+[node name="Robber" parent="Graph" instance=ExtResource("1_3253y")]
+z_index = 10
+position = Vector2(149.28625, 264.34625)
+scale = Vector2(1.0000001, 1.0000001)
 
-[node name="Node4" type="Sprite2D" parent="."]
-position = Vector2(2006.4338, 982.1544)
-texture = ExtResource("1_nxogm")
-script = ExtResource("2_nxogm")
+[node name="Driver" parent="Graph" instance=ExtResource("1_3253y")]
+z_index = 10
+position = Vector2(378.1525, 31.356575)
+scale = Vector2(1.0000001, 1.0000001)
 
-[node name="Node5" type="Sprite2D" parent="."]
-position = Vector2(1123.6753, 768.3612)
-texture = ExtResource("1_nxogm")
-script = ExtResource("2_nxogm")
+[node name="Officer" parent="Graph" instance=ExtResource("1_3253y")]
+z_index = 10
+position = Vector2(736.915, 491.15036)
+scale = Vector2(1.0000001, 1.0000001)
 
-[node name="Node6" type="Sprite2D" parent="."]
-position = Vector2(850.1121, 745.3727)
-texture = ExtResource("1_nxogm")
-script = ExtResource("2_nxogm")
+[node name="Operator" parent="Graph" instance=ExtResource("1_3253y")]
+position = Vector2(-141.4353, 287.02667)
+scale = Vector2(1.0000001, 1.0000001)
 
-[node name="Node7" type="Sprite2D" parent="."]
-position = Vector2(916.77875, 552.2693)
-texture = ExtResource("1_nxogm")
-script = ExtResource("2_nxogm")
+[node name="Neighbor" parent="Graph" instance=ExtResource("1_3253y")]
+position = Vector2(-417.72403, 258.1607)
+scale = Vector2(1.0000001, 1.0000001)
 
-[node name="Node8" type="Sprite2D" parent="."]
-position = Vector2(424.8247, 952.26935)
-texture = ExtResource("1_nxogm")
-script = ExtResource("2_nxogm")
+[node name="Fireman" parent="Graph" instance=ExtResource("1_3253y")]
+position = Vector2(-345.55905, 68.47004)
+scale = Vector2(1.0000001, 1.0000001)
 
-[node name="Node9" type="Sprite2D" parent="."]
-position = Vector2(1277.3306, 69.14282)
-texture = ExtResource("1_nxogm")
-script = ExtResource("2_nxogm")
+[node name="Pilot" parent="Graph" instance=ExtResource("1_3253y")]
+position = Vector2(-834.2188, 454.03696)
+scale = Vector2(1.0000001, 1.0000001)
 
-[node name="Node10" type="Sprite2D" parent="."]
-position = Vector2(1277.3306, -160.74222)
-texture = ExtResource("1_nxogm")
-script = ExtResource("2_nxogm")
+[node name="Reporter" parent="Graph" instance=ExtResource("1_3253y")]
+position = Vector2(9.080087, -416.06604)
+scale = Vector2(1.0000001, 1.0000001)
 
-[node name="Node11" type="Sprite2D" parent="."]
-position = Vector2(1242.8362, 1226.3037)
-texture = ExtResource("1_nxogm")
-script = ExtResource("2_nxogm")
+[node name="Radio Host" parent="Graph" instance=ExtResource("1_3253y")]
+position = Vector2(9.080087, -642.87024)
+scale = Vector2(1.0000001, 1.0000001)
+
+[node name="Dog" parent="Graph" instance=ExtResource("1_3253y")]
+position = Vector2(-23.909538, 726.20184)
+scale = Vector2(1.0000001, 1.0000001)
